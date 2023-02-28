@@ -1,0 +1,140 @@
+.signup {
+  padding: 5rem 2rem;
+  width: 100vw;
+  height: 100vh;
+  &-board {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 75rem;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+    padding: 0 2rem;
+  }
+  &-header {
+    top: 1rem;
+    left: 2rem;
+    position: absolute;
+    font-size: 20px;
+    display: flex;
+    width: calc(100% - 4rem);
+    justify-content: space-between;
+    a {
+      color: #9dc08b;
+      cursor: pointer;
+      text-decoration: none;
+      &:last-child {
+        font-size: 10px;
+        border: 1px solid #9dc08b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+        border-radius: 5px;
+        transition: all 0.25s ease;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+  &-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  &-title {
+    h2 {
+      font-size: 25px;
+    }
+    span {
+      font-size: 12px;
+      color: #999;
+    }
+  }
+  &-account {
+    color: #999;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    input {
+      line-height: 3.5rem;
+      border-radius: 5px;
+      outline: none;
+      border: 1px solid #999;
+      padding: 0 10px;
+    }
+
+    &-data {
+      line-height: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &-agree {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    &-check {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      cursor: pointer;
+    }
+    a {
+      text-decoration: none;
+      color: #f62682;
+    }
+  }
+  &-avatar {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &-render {
+      width: 10rem;
+      height: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #999;
+      border-radius: 50%;
+      &:hover {
+        opacity: 0.6;
+      }
+      i {
+        cursor: pointer;
+        font-size: 5rem;
+      }
+    }
+    input {
+      opacity: 0;
+    }
+  }
+  &-submit {
+    position: absolute;
+    bottom: 2rem;
+    width: 15rem;
+    height: 3.5rem;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #9dc08b;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
