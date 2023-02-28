@@ -65,7 +65,7 @@ const Signup = () => {
                 <input type="checkbox" id="agree" />
                 <label htmlFor="agree">agree to our terms</label>
               </div>
-              <a href="#">Dieu Khoang</a>
+              <a href="/">Dieu Khoang</a>
             </div>
           </div>
           <div className="signup-avatar">

@@ -8,8 +8,12 @@ const Landing = () => {
           <a href="/">L Mess</a>
         </span>
         <div className="landing-header-nav">
-          <a className="landing-header-contact">Liên hệ với chúng tôi</a>
-          <a className="landing-header-info">Các tính năng</a>
+          <a href="/" className="landing-header-contact">
+            Liên hệ với chúng tôi
+          </a>
+          <a href="/" className="landing-header-info">
+            Các tính năng
+          </a>
           <a href="/auth/login" className="landing-header-login">
             Đăng nhập
           </a>
