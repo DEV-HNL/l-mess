@@ -24,12 +24,12 @@
     width: calc(100% - 4rem);
     justify-content: space-between;
     a {
-      color: #9dc08b;
+      color: var(--themesColor);
       cursor: pointer;
       text-decoration: none;
       &:last-child {
         font-size: 10px;
-        border: 1px solid #9dc08b;
+        border: 1px solid var(--themesColor);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -131,7 +131,7 @@
     color: white;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #9dc08b;
+    background-color: var(--themesColor);
     cursor: pointer;
     &:hover {
       opacity: 0.6;

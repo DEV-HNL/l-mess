@@ -21,7 +21,12 @@ const Landing = () => {
       </div>
       <div className="landing-content">
         <div className="landing-sigup">
-          <button className="sigup-gmail">Sigup With Gmail or Phone</button>
+          <button
+            className="sigup-gmail"
+            onClick={() => (window.location.href = "/auth/login")}
+          >
+            Sigup With Gmail or Phone
+          </button>
           <div className="sigup-social">
             <button className="sigup-social-fb">
               <i className="fa-brands fa-facebook"></i>
